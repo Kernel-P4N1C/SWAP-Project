@@ -1,7 +1,7 @@
 Project: Development of a Secure Lab Inventory Management System with CRUD Functions in PHP
 Group members: Ashwin (Gorilla), Darien (Golden Retriever Biggest Opp), Errol (Leprechaun)
 
-#Project Overview
+# Project Overview
 
 Project Title: Secure Lab Inventory Management System
 
