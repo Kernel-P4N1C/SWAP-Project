@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: white;
+}
+
+.logo h2 {
+    margin: 0;
+    color: black;
+}
+
+/* Base styles for the dropdown button */
+.username-dropdown {
+    position: relative;
+    top: -6px;
+}
+
+.dropdown-btn {
+    position: relative;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+.dropdown-btn:hover, .dropdown-btn:hover {
+    background-color: white;
+    color: #c701c7;
+}
+
+/* Triangle (caret) next to the button */
+.caret {
+    margin-left: 6px;
+    transition: transform 0.1s ease;
+}
+
+/* Initially, the dropdown menu is hidden */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Dropdown links style */
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    width: 75px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #041325;
+    color: #AEFF00;
+}
+
+/* When the menu is shown, the dropdown button's caret rotates */
+.username-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.username-dropdown.open .caret  {
+    transform: rotate(90deg); /* Rotates the caret down when open */
+}
+
+
+.main-content {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #041325;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li a {
+    color: #ffffff75;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: color 0.1s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebar ul li a::after {
+    content: '›';          
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: absolute;
+    left: 200px;            
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    color: #AEFF00;
+}
+
+.container {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button, button {
+    padding: 0.75em;
+    width: 40%;
+    margin-top: 1em;
+    background-color: #AEFF00;
+    color: #041325;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.button:hover, button:hover {
+    background-color: #041325;
+    color: #AEFF00;
+}
+
+.button_approve {
+    padding: 0.75em;
+    width: 40%;
+    margin-top: 1em;
+    background-color: #041325;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button_approve:hover {
+    background-color: #AEFF00;
+    color: #041325;
+}
+
+.button_reject {
+    padding: 0.75em;
+    width: 40%;
+    margin-top: 1em;
+    background-color: #041325;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button_reject:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+.button_edit {
+    padding: 0.75em;
+    width: 40%;
+    margin-top: 1em;
+    background-color: #041325;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button_delete {
+    padding: 0.75em;
+    width: 40%;
+    margin-top: 1em;
+    background-color: #041325;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button_edit:hover {
+    background-color: #0e45da;
+    color: #fff;
+}
+
+.button_delete:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.button, .button_approve, .button_reject, .button_edit, .button_delete {
+    max-width: 200px;
+    width: 100%;
+}
