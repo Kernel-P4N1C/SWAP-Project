@@ -69,13 +69,10 @@ if (activeTab) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Attach event listeners to delete buttons
-    const deleteButtons = document.querySelectorAll('.delete-button');
-
-    deleteButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const assignmentId = this.dataset.assignmentId;
-            const row = this.closest('tr');
+    document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('button_delete')) {
+            const button = event.target;
+            const assignmentId = button.dataset.assignmentId;
 
             if (confirm('Are you sure you want to delete this assignment?')) {
                 fetch('facility_manager_dashboard.php', {
@@ -91,17 +88,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     .then(response => response.json())
                     .then(data => {
                         if (data.success) {
-                            alert(data.message);
+                            // Remove the row from the table
+                            const row = button.closest('tr');
                             row.remove();
                         } else {
-                            alert(data.message);
+                            alert('Error: ' + data.message);
                         }
                     })
                     .catch(error => {
                         console.error('Error:', error);
-                        alert('An error occurred while deleting the record.');
+                        alert('An error occurred while processing the request.');
                     });
             }
-        });
+        }
     });
 });
