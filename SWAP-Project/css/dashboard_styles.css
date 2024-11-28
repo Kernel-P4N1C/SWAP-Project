@@ -123,6 +123,27 @@ body {
     color: #AEFF00;
 }
 
+/* Specific styling for the dashboard-tab */
+.sidebar ul li .dashboard-tab {
+    color: white; /* White text */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 4px; /* Rounded corners */
+    display: block; /* Ensure it spans the full width of the sidebar */
+    cursor: default; /* Prevent pointer cursor */
+    pointer-events: none; /* Ensure it's completely unclickable */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Override hover styles for the dashboard tab */
+.sidebar ul li .dashboard-tab:hover {
+    color: white; /* Keep the same text color */
+}
+
+.sidebar ul li .dashboard-tab::after {
+    content: ''; /* No triangle for this tab */
+}
+
 .container {
     flex-grow: 1;
     padding: 20px;

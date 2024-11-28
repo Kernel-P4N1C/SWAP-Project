@@ -93,7 +93,6 @@ $conn->close();
                 <input type="password" id="password" name="password" required>
                 <button type="submit" name="login">Login</button>
             </form>
-            <a href="index.php" class="back-to-home">← Back to Home</a>
         <?php else: ?>
             <!-- Dashboard -->
             <h2>Dashboard</h2>
@@ -116,8 +115,8 @@ $conn->close();
                         echo "<p>Role not recognized.</p>";
                 }
             ?>
-            <a href="login.php?action=logout" class="button">Logout</a>
         <?php endif; ?>
     </div>
+    <a href="/SWAP-Project/lab_home.php" class="back-to-home">← Go back to site</a>
 </body>
 </html>

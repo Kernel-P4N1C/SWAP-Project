@@ -106,6 +106,7 @@ $requests = $request_result->fetch_all(MYSQLI_ASSOC);
         <!-- Sidebar -->
         <div class="sidebar">
             <ul>
+                <li><a class="dashboard-tab">⬚ Dashboard</a></li>
                 <li><a href="#tab1" class="tab-link active">Assignments</a></li>
                 <li><a href="#tab2" class="tab-link">Requests</a></li>
                 <li><a href="#tab3" class="tab-link">New Request</a></li>
