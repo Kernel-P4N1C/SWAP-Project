@@ -1,0 +1,201 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #041325;
+    color: white;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #041325;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.nav_link {
+    list-style: none;
+    display: flex;
+    font-weight: 900;
+}
+
+.nav_link li {
+    margin-left: 20px;
+}
+
+.nav_link a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Section */
+.sec {
+    position: relative;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/dariencmj/images/homepage.jpg') no-repeat center center/cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.sec_t h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #aeff00;
+    -webkit-text-stroke: 2px #041325;
+    font-weight: 900;
+}
+
+.sec_t p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #aeff00;
+    -webkit-text-stroke: 1px #041325;
+}
+
+.sec .btn {
+    padding: 10px 20px;
+    background-color: #aeff00;
+    color: #041325;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+/* Services Section */
+.ch_page {
+    background-color: #041325;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.ch_page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.ch_page_card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    color: #041325;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #aeff00;
+    color: #041325;
+    transition: background-color 0.3s;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+/* Other Pages Section */
+.others {
+    background-color: #041325;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.others h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.others ul {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #aeff00;
+}
+
+.others li {
+    margin-bottom: 10px;
+}
+
+.others a {
+    color: #aeff00;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.others a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #aeff00;
+    color: #041325;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 900;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social_links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social_links li {
+    margin-left: 15px;
+}
+
+.social_links a {
+    color: #041325;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
