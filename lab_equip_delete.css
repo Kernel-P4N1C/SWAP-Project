@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #041325;
+    color: white;
+    padding: 20px;
+}
+
+/* Heading Styling */
+h3 {
+    color: #aeff00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 20px;
+    background-color: #1e2a33;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #041325;
+    color: #aeff00;
+}
+
+td {
+    background-color: #1e2a33;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Button Styling */
+button {
+    background-color: #aeff00;
+    color: #041325;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #9aff00;
+}
+
+/* Link Styling */
+a {
+    color: #aeff00;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Select All Checkbox */
+#select_all {
+    cursor: pointer;
+}

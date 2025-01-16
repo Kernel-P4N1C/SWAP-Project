@@ -1,0 +1,295 @@
+
+:root {
+    --dark-bg: #041325;
+    --bright-green: #aeff00;
+    --dark-green: #8bd900;
+    --error-red: #e74c3c;
+    --hover-red: #c0392b;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar and Filter */
+
+.sidebar {
+    background-color: #041325;
+    color: #9AE300;
+    width: 300px; 
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.sidebar .brandbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.sidebar .brand {
+    width: 150px;
+    height: auto;
+}
+
+.sidebar .ulink {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.sidebar .ulink ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0;      
+    margin: 0;      
+}
+
+.sidebar .ulink li {
+    margin: 0 15px;
+}
+
+.sidebar .ulink a {
+    text-decoration: none;
+    color: #aeff00;      
+    font-weight: bold;     
+}
+
+.sidebar hr {
+    border: none;            
+    border-top: 2px solid #aeff00; 
+    margin: 20px 0;        
+}
+
+.sidebar .filter_dropdown label {
+    display: block;
+    margin: 10px 0;
+}
+
+.sidebar .filter_dropdown input,
+.sidebar .filter_dropdown select,
+.sidebar .filter_dropdown button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 1em;
+}
+
+.sidebar input[type="number"],
+.sidebar input[type="text"] {
+    width: 91.8%;    
+    padding: 10px;   
+    font-size: 16px;  
+    margin-bottom: 15px; 
+}
+
+.sidebar label {
+    font-weight: bold;
+    margin-bottom: 5px; 
+    display: block; 
+}
+.sidebar 
+.filter_dropdown button#filterButton {
+    background-color: #9AE300;
+    cursor: pointer;
+    font-weight: bold;
+    color: #041325;
+}
+
+.sidebar .filter_dropdown button#filterButton:hover {
+    background-color: #7a9e00;
+}
+
+.sidebar .filter_dropdown button#resetButton {
+    background-color: red;
+    cursor: pointer;
+    font-weight: bold;
+    color: #041325;
+}
+
+.sidebar .filter_dropdown button#resetButton:hover {
+    background-color: darkred;
+}
+
+
+.main_content {
+    margin-left: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.header h3 {
+    font-size: 28px;
+    color: #041325;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+    font-size: 12px; 
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #041325;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+table td, table th {
+    min-width: 100px;
+}
+
+table img {
+    width: 50px; 
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+table tr {
+    transition: background-color 0.3s ease;
+}
+
+.btn {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.edit {
+    background-color: #aeff00;
+    color: #041325;
+}
+
+.edit:hover {
+    background-color: #8bd900;
+}
+
+.delete {
+    background-color: #e74c3c;
+    color: #041325;
+}
+
+.delete:hover {
+    background-color: #c0392b;
+}
+
+/* Form Style */
+
+.fcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+form label {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+form input[type="submit"] {
+    background-color: #041325;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #8bd900;
+}
+
+#successAlert {
+    display: none; 
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: #041325; 
+    color: #aeff00; 
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#successAlert.show {
+    display: block;
+    opacity: 1;
+}
+
